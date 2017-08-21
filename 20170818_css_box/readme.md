@@ -117,6 +117,6 @@ cascading style sheet
     :visited    a链接，被点击(访问)过后的时候
 
     :hover      元素被鼠标经过的时候
-    :active     元素被鼠标经过的时候
+    :active     元素被鼠标按下的时候
 
     :checked    表单元素常用

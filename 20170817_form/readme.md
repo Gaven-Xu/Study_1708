@@ -115,12 +115,12 @@ type
 ---
         number
                 类似text，只能输入数字
+                
         range
                 默认0-100
-        
 
-        file    上传文件
-        image   上传图片
+        file
+                上传文件
 
 ## 1.4. select
 

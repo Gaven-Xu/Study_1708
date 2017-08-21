@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            /*css初始化*/
+        }
+
+        /* .clear-top::before,.clear-top:before {
+            content: "";
+            display: block;
+            overflow: hidden;
+        }
+        .clear-bottom::after,.clear-bottom:after{
+            content:"";
+            display: block;
+            overflow: hidden;
+        } */
+        .father {
+            width: 0;
+            height: 0;
+            background: #880;
+            border:40px solid #fff;
+            border-bottom-color:#00f;
+            border-left-width:0;
+        }
+
+        /* .son {
+            width: 100px;
+            height: 100px;
+            margin-top: 40px;
+            background-color: #f00;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="father clear-top">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>
