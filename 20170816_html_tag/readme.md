@@ -55,6 +55,8 @@
 ### 1.1.2. 自定义列表
 
     dl
+        dt
+        dd
 
 ## 1.2. 其它语义化标签
 
@@ -76,15 +78,15 @@
 
     重新认识 display
 
-                    none            不显示，相当于不在网页上
+                none            不显示，相当于不在网页上
+                
+                inline          行内元素
+
+                    可以让元素，使用文字的属性
                     
-                    inline          行内元素
+                block           块元素
 
-                        可以让元素，使用文字的属性
-                        
-                    block           块元素
-
-                    inline-block    按行内排列，但是支持高宽
+                inline-block    按行内排列，但是支持高宽
 
 # 3. 链接/锚点
 
@@ -135,13 +137,15 @@
     colspan 向右合并    合并列             1
 
     thead
-    tbody
+    tbody   使用thead，tfoot，tbody分组之后，thead和tfoot使用最小高度，其它高度由tbody去均分
     tfoot
 
     caption     在table标签内部写，但显示在外部
     colgroup
 
 # 表单
+
+    与用户的数据交互
 
     form
     

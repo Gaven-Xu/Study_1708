@@ -59,6 +59,7 @@ cols rows
 
 list
         只用于，选择datalist的id
+        datalist 提供备选数据
 
 label  
         用于给optgroup设置分组名称
@@ -88,7 +89,8 @@ type
 
         radio
                 value需要指定
-                name属性一样的，为一组，其中只能选一个
+                1.必须有一个选项，设置了checked
+                2.name属性一样的，为一组，其中只能选一个
 ---
         color
                 value 用户选择的颜色值
@@ -118,7 +120,7 @@ type
                 
         range
                 默认0-100
-
+---
         file
                 上传文件
 

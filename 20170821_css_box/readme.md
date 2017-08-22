@@ -102,7 +102,7 @@ sup
     text-indent         首行缩进
 
 
-    white-space: nowrap;        换行：不换行
+    white-space: nowrap;        换行：不换行, 按照单词换行
     width: 100px;               宽度
     overflow: hidden;           内容超出：隐藏
     text-overflow: ellipsis;    文字超出：省略符。 默认叫clip，裁剪

@@ -1,0 +1,27 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.clear-top::before,.clear-top:before{
+    content:"";
+    display: block;
+    overflow: hidden;
+}
+.clear-float::after,.clear-float:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* init */
+.container{
+    height:52px;
+    background: #00f;
+}
+.container .box{
+    width: 50px;
+    height: 50px;
+    border:1px solid #f00;
+    text-align: center;
+    line-height: 50px;
+    float:left;    
+}

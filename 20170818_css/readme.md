@@ -37,8 +37,8 @@ cascading style sheet
     *       1       选择所有元素
     tagName 10      直接写标签名，选择所有符合该标签名的元素    
     .       100     class选择器，选择具有同样class属性的元素
-    #       10000   id选择器，通常，一个网页里，不能出现两个同样的id
     []      1000    属性选择器，推荐在不得已的情况下使用
+    #       10000   id选择器，通常，一个网页里，不能出现两个同样的id
     
     [title="aaa"]   2, 属性完全相等   
     [title^="aaa"]  3，只有出现以aaa开头的任意字符串，都行   
@@ -66,6 +66,7 @@ cascading style sheet
 
         .box2.boxinfo
         不用空格，两个选择器，连接写
+        选择，class里面，同时具有box2 和boxinfo的那个元素
 
     2. 后代选择器
 
