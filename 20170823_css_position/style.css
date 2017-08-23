@@ -1,0 +1,50 @@
+.container{
+    background:#00f;
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+.box{
+    width: 48px;
+    height: 48px;
+    background: #999;
+    border: 1px solid #f00;
+    font:bold 36px/48px "微软雅黑";
+    text-align: center; 
+}
+.box1{
+    position: relative;
+    left: 25px;
+    top: 25px;
+}
+.box2{
+    position: relative;
+}
+.box3{
+    position: absolute;
+    left: 50%;
+    top:50%;
+}
+.box4{
+    position: fixed;
+    left: 50%;
+    top:50%;
+}
+.box5{
+    position: fixed;
+    right: 10px;
+    bottom:10px;
+    background: #f00;
+}
+.box5 .code{
+    width: 200px;
+    height: 200px;
+    background-color: #0f0;
+    position: absolute;
+    bottom:-1px;
+    left:-150px;
+    transition: all 1s;
+}
+.box5:hover .code{
+    left:-100px;
+}
