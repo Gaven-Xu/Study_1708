@@ -1,0 +1,55 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+/* init */
+
+#Nav{
+    width:100%;
+    min-width: 1024px;
+    height:80px;
+    background: #fff;
+}
+#Nav>*{
+    height: inherit;
+}
+#Nav .logo{
+    display: block;
+    float:left;
+    width: 310px;
+    background: url('http://cdn.tencentgroup.qq.com/daxue_static/images/logo.png') no-repeat;
+}
+#Nav .nav-menu{
+    float:left;
+}
+#Nav .nav-item{
+    height: inherit;
+    float:left;
+    background-image: url("http://cdn.tencentgroup.qq.com/daxue_static/images/nav.png")
+}
+#Nav .nav-item:hover{
+    background-image: url("http://cdn.tencentgroup.qq.com/daxue_static/images/nav-on.png");
+}
+#Nav .nav-item1{
+    width: 100px;
+}
+#Nav .nav-item2{
+    width: 124px;
+    background-position: -100px 0;
+}
+#Nav .nav-item3{
+    width: 146px;
+    background-position: -224px 0;
+}
+#Nav .nav-item4{
+    width: 124px;
+    background-position: -490px 0;
+}
+#Nav .nav-item5{
+    width: 124px;
+    background-position: -613px 0;
+}
+#Nav .selected{
+    background-image: url("http://cdn.tencentgroup.qq.com/daxue_static/images/nav-on.png");    
+}
+/* Nav */
