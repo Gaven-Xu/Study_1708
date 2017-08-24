@@ -1,5 +1,18 @@
-.container{
-    width: 400px;
+/* .bigContainer{
+    width: 320px;
     height: 400px;
+    overflow: scroll;
+} */
+.container{
+    width: 200px;
+    height: 200px;
     background-image:url('./images/2.jpg');
+}
+.anotherContainer{
+    width: 200px;
+    height: 200px;
+    background-image:url('./images/back.jpg');
+    position: relative;
+    top:-100px;
+    left:100px;
 }
