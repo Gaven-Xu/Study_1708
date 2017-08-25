@@ -1,0 +1,82 @@
+#Tab{
+	width: 400px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+}
+#Tab .dot{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 100;
+}
+#Tab .dot .circle{
+	width: 16px;
+	height: 16px;
+	border: 2px solid #999999;
+	border-radius: 50%;
+	position: relative;
+	top: 5px;
+	left: 5px;
+}
+#Tab .dot .disc{
+	width: 10px;
+	height: 10px;
+	position: relative;
+	left: 3px;
+	top: 3px;
+	display: none;
+	border-radius: 50%;
+	background: #ffffff;
+}	
+#Tab .dot:hover .disc{
+	display: block;
+}
+#Tab .dot + div{
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin-left: 0;
+}
+#Tab .dot:hover + div{
+	z-index: 50;
+	left: 400px;
+	margin-left: -400px;
+	transition: margin-left 0.2s;
+}
+#Tab .dot1{
+	right: 90px;
+	bottom: 10px;
+}
+#Tab .dot1 + div{
+	z-index: 4;
+	background: #ff0000;
+}
+#Tab .dot2{
+	right: 60px;
+	bottom: 10px;
+}
+#Tab .dot2 + div{
+	z-index: 3;
+	background: rgb(183, 255, 0);
+}
+#Tab .dot3{
+	right: 30px;
+	bottom: 10px;
+}
+#Tab .dot3 + div{
+	z-index: 2;
+	background: rgb(0, 188, 255);
+}
+#Tab .dot4{
+	right: 0;
+	bottom: 10px;
+}
+#Tab .dot4 + div{
+	z-index: 1;
+	background: rgb(0, 62, 255);
+}
+

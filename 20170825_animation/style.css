@@ -1,0 +1,95 @@
+/* #Tab{
+	width: 200px;
+	height: 400px;
+	position: relative;
+}
+#Tab .tab_btn{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+#Tab .tab_btn > *{
+	width: 200px;
+	height: 360px;
+	position: absolute;
+	left: 0;
+	top: 40px;
+}
+#Tab .tab_btn:hover > *{
+	z-index: 10;
+}
+#Tab .tab_btn1 , #Tab .tab_btn1 > *{
+	background-color: #ff0000;
+	z-index: 5;
+}
+#Tab .tab_btn2 , #Tab .tab_btn2 > *{
+	background-color: #00ff00;
+	z-index: 4;
+}
+#Tab .tab_btn3 , #Tab .tab_btn3 > *{
+	background-color: #0000ff;
+	z-index: 3;
+}
+#Tab .tab_btn4 , #Tab .tab_btn4 > *{
+	background-color: #ff00ff;
+	z-index: 2;
+}
+#Tab .tab_btn5 , #Tab .tab_btn5 > *{
+	background-color: #ffff00;
+	z-index: 1;
+} */
+/* 
+规范1
+盒模型
+浮动
+定位
+背景
+
+规范2
+浮动
+盒模型
+定位
+背景
+其它
+
+规范3
+按字母顺序
+*/
+#Tab{
+	width: 200px;
+	height: 400px;
+	position: relative;
+}
+#Tab input{
+	display: none;
+}
+#Tab input:checked + div{
+	z-index: 10;
+}
+#Tab label{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+#Tab > div{
+	width: 200px;
+	height: 360px;
+	position: absolute;
+	left: 0;
+	top: 40px;
+}
+label[for="tab_btn1"] , #tab_btn1 + div{
+	background: #ff0000;
+}
+label[for="tab_btn2"] , #tab_btn2 + div{
+	background: rgb(162, 255, 0);
+}
+label[for="tab_btn3"] , #tab_btn3 + div{
+	background: rgb(0, 255, 142);
+}
+label[for="tab_btn4"] , #tab_btn4 + div{
+	background: rgb(0, 125, 255);
+}
+label[for="tab_btn5"] , #tab_btn5 + div{
+	background: rgb(255, 0, 204);
+}

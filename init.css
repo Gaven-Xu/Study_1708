@@ -1,17 +1,19 @@
-html,body{
+html, body {
     margin: 0;
     padding: 0;
 }
 
-.clear-top::before,.clear-top:before{
-    content:"";
+.clear-top::before, .clear-top:before {
+    content: "";
     display: block;
     overflow: hidden;
 }
 
-.clear-float::after,.clear-float:after{
-    content:"";
+.clear-float::after, .clear-float:after {
+    content: "";
     display: block;
-    clear:both;
+    clear: both;
 }
+
+
 /*init*/
