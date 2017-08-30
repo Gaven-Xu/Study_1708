@@ -76,7 +76,7 @@ sup
             css3 可以设置自定义字体，这个字体，用户的电脑不需要安装
         
     font-weight
-            400-900
+            400-900 整百的数字
             normal < 500 < bold
 
             常设置bold，或者不设置
@@ -97,7 +97,7 @@ sup
     color               设置字体颜色
     text-align          相对于外容器,文字左右对齐 left center right
 
-    vertical-align      文字与文字之间，文字垂直对齐 top middle bottom
+        vertical-align      文字与文字之间，文字垂直对齐 top middle bottom
 
     text-indent         首行缩进
 
@@ -134,6 +134,9 @@ sup
 
     格式与padding一模一样
 
+    margin-left:auto;
+    margin-right:auto;
+
 ### 4.2.1. 注意经典问题，外边距坍塌、外边距合并
 
     1. 相邻元素，相邻的margin会合并
@@ -153,11 +156,13 @@ sup
     width: 200px;
     height: 200px;
     background-color: #880;
+    margin-top:30px;
 }
 .son{
     width: 100px;
     height: 100px;
     background-color: #f00;
+    margin-top:60px;
 }   
 ```
 
