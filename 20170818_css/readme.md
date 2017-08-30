@@ -40,6 +40,7 @@ cascading style sheet
     
     *               1       选择所有元素
     []              1000    属性选择器，推荐在不得已的情况下使用
+    
     [title="aaa"]   2, 属性完全相等   
     [title^="aaa"]  3，只有出现以aaa开头的任意字符串，都行   
     [title$="aaa"]  3，只有出现以aaa结尾的任意字符串，都行 
@@ -89,14 +90,22 @@ cascading style sheet
 
     6. 分组选择器
 
-        .box{}
+        .box{
+            color:#f00;
+        }
         
-        .info{}
+        .info{
+            color:#f00;
+        }
 
-        .box , .info{}
+        .box , .info{
+            color:#f00;
+        }
         逗号隔开多个不相关的选择器，用同样的属性
 
 ## 伪元素
+
+<!-- 注释：我们常说的html标签，也可以称之为元素，节点，容器 -->
 
     ::before 
     ::after
@@ -114,10 +123,12 @@ cascading style sheet
     
 ## 伪类
 
-    :link       a链接默认时候
-    :visited    a链接，被点击(访问)过后的时候
+    a链接的伪类，在css选择器中，一定要写在a标签后面
 
-    :hover      元素被鼠标经过的时候
-    :active     元素被鼠标按下的时候
+    :link       a链接**默认**时候
+    :visited    a链接，被**点击(访问)过后**的时候
+
+    :hover      元素被鼠标**经过**的时候
+    :active     元素被鼠标**按下**的时候
 
     :checked    表单元素常用
