@@ -25,3 +25,108 @@
         是不是经典问题（浮动清除，定位，外边距合并）
     3. 找人
     4. 累积经验，多看文章
+
+# css3
+
+## border
+
+    border-radius 圆角 px 50%
+
+    box-shadow  盒子阴影 x轴偏移 y轴偏移 模糊大小 拓展大小 阴影颜色
+    text-shadow 文字阴影 x轴偏移 y轴偏移 模糊大小 阴影颜色
+
+    border-image
+                        source                      slice   repeat
+        border-image: url(./border-image.png)       30      round;
+
+## background
+## 文本效果
+
+    text-shadow
+    word-wrap 跟 white-warp区分开，前者叫单词换行，后者叫空格换行。word-wrap对中文没有意义
+
+## 字体
+
+    @font-face
+
+```css
+@font-face {
+    font-family: blxqx;
+    src: url('./blxqx_font.ttf');
+}
+.font{
+    font: 24px/48px blxqx,Arial;
+}
+```
+
+## transition
+```css
+    .font{
+        font: 24px/48px blxqx,Arial;
+        transition:all 2s ease 0s;
+    }
+    .font:hover{
+        font-size:48px;
+        color:#f00;
+        transition:all 2s ease 1s;
+    }
+```
+    1. 分为hover和非hover两种状态
+    2. 可以分开控制，多条不同属性，不同时间，不同方式，不同延迟的过度
+    3. 可以通过精准把握时间做出比较有意思的效果
+    4. 过渡，必须有起始状态，终止状态，而且有中间连续状态
+
+## transform
+    所有的变形，默认都是以对象的中心来画x,y,z轴
+
+    transform:translate(60px,60px)  平移 从左往右，从上往下
+    transform:translate3D(60px,60px,60px)  平移 从左往右，从上往下
+    transform:translateX(60px)  平移 从左往右，从上往下
+    transform:translateY(60px)  平移 从左往右，从上往下
+    transform:translateZ(60px)  平移 从左往右，从上往下
+
+    transform: rotate(90deg);       Z轴旋转
+    transform: rotate3d(1,0,1,45deg); x , z 旋转45deg, y不旋转
+    transform: rotateZ(90deg);       Z轴旋转
+    transform: rotateY(180deg);     
+    transform: rotateX(180deg);     
+
+    transform: scale(1);            放大，倍数
+    transform: scaleX(1);            放大，倍数
+    transform: scaleY(1);            放大，倍数
+    transform: scale3d(1,2,3);       x 方向，1倍，y方向，2倍，z,倍
+
+    transform: skew(10deg,10deg);   不做强制要求
+
+## 3d / transform相关
+
+    transform-origin: 修改 坐标远点位置，参数可以使 left rigt top bottom center
+
+    transform-style 和 perspective 都是给父容器设置的
+
+        transform-sytle 规定，子元素之间，按真实3D排列（表现），还是按网页平面表现（标签在后，则，在上一层）
+
+        perspective 可以是一条css属性，也可以是transform属性里的一个方法
+
+            perspective:300px;              给父容器设置，推荐 
+            transform:perspective(300px);   直接给需要变形的元素设置
+
+## animation / @keyframes 规则
+
+```css
+@keyframes donghua{
+    0%{
+        width:5px;
+        height:5px;
+    }
+    100%{
+        width:100px;
+        height:100px;
+    }
+}
+
+.box{
+    animation:donghua 1s ease 1s infinite alternate;
+    /*        动画名字 执行时间 时间曲线 动画开始的延迟时间 次数 是否反向*/
+}
+```

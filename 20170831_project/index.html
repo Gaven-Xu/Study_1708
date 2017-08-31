@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 30px;
+            height: 30px;
+            border: 30px solid #000;
+            position: relative;
+            bottom: 0;
+            border-image: url(./border-image.png) 30 round;
+            font-size: 12px;
+            color: #24a295;
+            float: left;
+            animation: length 2s linear infinite;
+        }
+
+        .eye {
+            animation: eyemove 0.5s ease-in-out 2s 5 alternate;
+            position: relative;
+        }
+        @keyframes length2 {
+            0% {
+                transform:rotate(0deg);
+                /* height: 30px; */
+                /* transform:scaleY(1); */
+            }
+            100% {
+                transform:rotate(360deg);
+                /* height: 30px; */
+                /* transform:scaleY(1); */
+            }
+        }
+        @keyframes length {
+            0% {
+                transform:rotate(0deg);
+                /* height: 30px; */
+                /* transform:scaleY(1); */
+            }
+            50% {
+                transform:rotate(180deg);
+                /* height: 90px; */
+                /* transform:scaleY(2); */
+            }
+            100% {
+                transform:rotate(360deg);
+                /* height: 30px; */
+                /* transform:scaleY(1); */
+            }
+        }
+
+        @keyframes eyemove {
+            0% {
+                left: -5px;
+            }
+            100% {
+                left: 10px;
+            }
+            /* 100% {
+                left: -5px;
+            } */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <span class="eye">O  O</span>
+    </div>
+    <div class="box">
+        <span class="eye">O  O</span>
+    </div>
+    <div class="box">
+        <span class="eye">O  O</span>
+    </div>
+    <div class="box">
+        <span class="eye">O  O</span>
+    </div>
+    <div class="box">
+        <span class="eye">O  O</span>
+    </div>
+    <div class="box">
+        <span class="eye">O  O</span>
+    </div>
+    <div class="box">
+        <span class="eye">O  O</span>
+    </div>
+    <div class="box">
+        <span class="eye">O  O</span>
+    </div>
+    <div class="box">
+        <span class="eye">O  O</span>
+    </div>
+    <div class="box">
+        <span class="eye">O  O</span>
+    </div>
+    <div class="box">
+        <span class="eye">O  O</span>
+    </div>
+    <div class="box">
+        <span class="eye">O  O</span>
+    </div>
+    <div class="box">
+        <span class="eye">O  O</span>
+    </div>
+    <div class="box">
+        <span class="eye">O  O</span>
+    </div>
+    <div class="box">
+        <span class="eye">O  O</span>
+    </div>
+</body>
+
+</html>
