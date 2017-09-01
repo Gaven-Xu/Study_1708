@@ -1,0 +1,209 @@
+@keyframes bigStarMove{
+	0%{
+		background-position: 0 0;
+	}
+	100%{
+		background-position: -1600px 0;
+	}
+}
+@keyframes smallStarMove{
+	0%{
+		background-position: 0 0;
+	}
+	100%{
+		background-position: -800px 0;
+	}
+}
+@keyframes skyship{
+	0%{
+		left: 800px;
+		top: 350px;
+	}
+	10%{
+		left: -156px;
+		top: 350px;
+	}
+	100%{
+		left: -156px;
+		top: 350px;
+	}
+}
+@keyframes earthRotate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(-360deg);
+	}
+}
+@keyframes catShake{
+	0%{
+		top: -3px;
+	}
+	5%{
+		top: 3px;
+	}
+	10%{
+		top: -1px;
+	}
+	20%{
+		top: 1px;
+	}
+	30%{
+		top: 0;
+	}
+	100%{
+		top: 0;
+	}
+}
+@keyframes catMove{
+	0%{
+		top: 50px;
+		left: 50px;
+	}
+	25%{
+		top: 180px;
+		left: 300px;
+	}
+	50%{
+		top: 250px;
+		left: 105px;
+	}
+	750%{
+		top: 80px;
+		left: 450px;
+	}
+	100%{
+		top: 50px;
+		left: 50px;
+	}
+}
+@keyframes eyeShake{
+	0%{
+		top: 35px;
+	}
+	50%{
+		top: 40px;
+	}
+	100%{
+		top: 35px;
+	}
+}
+@keyframes fireShine{
+	0%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0.4;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.container{
+	width: 800px;
+	height: 600px;
+	position: relative;
+	background-color: linear-gradient(70deg, black, white);
+	overflow: hidden;
+}
+.background-big , .background-small{
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.background-big{
+	opacity: 0.7;
+	background-image: url("./starline-assets/starline.png");
+	animation: bigStarMove 0.5s linear infinite;
+	z-index: 3;
+}
+.background-small{
+	opacity: 0.3;
+	background-image: url("./starline-assets/starline_s.png");
+	animation: smallStarMove 0.9s linear infinite;
+	z-index: 1;
+}
+.skyship{
+	width: 156px;
+	height: 68px;
+	background-image: url("./starline-assets/skyship.png");
+	position: absolute;
+	animation: skyship 10s linear infinite;
+}
+.earth{
+	width: 1488px;
+	height: 1488px;
+	background-image: url("./starline-assets/earth.png");
+	position: absolute;
+	left: -344px;
+	top: 482px;
+	animation: earthRotate 10s linear infinite;
+}
+.fly_set{
+	width: 180px;
+	height: 80px;
+	position: absolute;
+	z-index: 2;
+	animation: catMove 5s ease infinite;
+}
+.fly_cat{
+	width: 167px;
+	height: 78px;
+	position: absolute;
+	background: url("./starline-assets/fly_cat.png") no-repeat;
+	top: 0;
+	left: 0;
+	animation: catShake 0.5s linear infinite;
+}
+.rainbow{
+	width: 1000px;
+	height: 56px;
+	position: absolute;
+	left: -1000px;
+	top: 17px;
+}
+.eye{
+	width: 28px;
+	height: 6px;
+	position: absolute;
+	right: 40px;
+	top: 35px;
+	background: url(./starline-assets/eye.png);
+	animation: eyeShake 0.2s ease infinite;
+}
+.rainbow div{
+	height: 8px;
+	width: 1000px;
+	background-position: top right;
+}
+.rainbow .chi{
+	animation: fireShine 1s ease infinite;
+	background-image: url("./starline-assets/chi.png");
+}
+.rainbow .cheng{
+	animation: fireShine 1s ease 0.3s infinite;
+	background-image: url("./starline-assets/cheng.png");
+}
+.rainbow .huang{
+	animation: fireShine 1s ease 0.5s infinite;
+	background-image: url("./starline-assets/huang.png");
+}
+.rainbow .lv{
+	animation: fireShine 1s ease 0.3s infinite;
+	background-image: url("./starline-assets/lv.png");
+}
+.rainbow .qing{
+	animation: fireShine 1s ease 0.5s infinite;
+	background-image: url("./starline-assets/qing.png");
+}
+.rainbow .lan{
+	animation: fireShine 1s ease 0.3s infinite;
+	background-image: url("./starline-assets/lan.png");
+}
+.rainbow .zi{
+	animation: fireShine 1s ease 0.8s infinite;
+	background-image: url("./starline-assets/zi.png");
+}
