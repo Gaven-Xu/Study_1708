@@ -1,3 +1,23 @@
+@keyframes colorChange{
+	0%{
+		background-color: #795548;
+	}
+	15%{
+		background-color: #ff5722;
+	}
+	30%{
+		background-color: #ff9800;
+	}
+	45%{
+		background-color: #ffc107;
+	}
+	60%{
+		background-color: #fff393;
+	}
+	100%{
+		background-color: #fff393;
+	}
+}
 @keyframes bigStarMove{
 	0%{
 		background-position: 0 0;
@@ -104,8 +124,9 @@
 	width: 800px;
 	height: 600px;
 	position: relative;
-	background-color: linear-gradient(70deg, black, white);
 	overflow: hidden;
+	background-image: linear-gradient(180deg,#0f008a,rgba(0,0, 0, 0.00) 80%);
+	animation: colorChange 5s linear infinite alternate;
 }
 .background-big , .background-small{
 	width: inherit;
@@ -118,13 +139,13 @@
 	opacity: 0.7;
 	background-image: url("./starline-assets/starline.png");
 	animation: bigStarMove 0.5s linear infinite;
-	z-index: 3;
+	z-index: 1000;
 }
 .background-small{
 	opacity: 0.3;
 	background-image: url("./starline-assets/starline_s.png");
 	animation: smallStarMove 0.9s linear infinite;
-	z-index: 1;
+	z-index: 10;
 }
 .skyship{
 	width: 156px;
@@ -140,14 +161,29 @@
 	position: absolute;
 	left: -344px;
 	top: 482px;
-	animation: earthRotate 10s linear infinite;
+	animation: earthRotate 20s linear infinite;
 }
 .fly_set{
 	width: 180px;
 	height: 80px;
 	position: absolute;
-	z-index: 2;
+	z-index: 103;
 	animation: catMove 5s ease infinite;
+}
+.fly_set.shadow1{
+	animation-delay: 0.05s;
+	z-index: 102;
+	opacity: 0.2;
+}
+.fly_set.shadow2{
+	animation-delay: 0.10s;
+	z-index: 101;
+	opacity: 0.2;
+}
+.fly_set.shadow3{
+	animation-delay: 0.15s;
+	z-index: 100;
+	opacity: 0.2;
 }
 .fly_cat{
 	width: 167px;
