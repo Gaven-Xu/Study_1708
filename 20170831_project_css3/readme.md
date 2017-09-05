@@ -130,3 +130,81 @@
     /*        动画名字 执行时间 时间曲线 动画开始的延迟时间 次数 是否反向*/
 }
 ```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+</html>
+```
+
+```css
+.container{
+	width: 400px;
+	height: 400px;
+	background: #000000;
+	position: relative;
+}
+.box{
+	width: 200px;
+	height: 200px;
+	background: hsla(0, 0%, 100%, 0.49);
+	position: absolute;
+}
+.box{
+	left: 0;
+	top: 0;
+	animation: move 2s ease-in-out  infinite;
+}
+.box1{
+	background: #ffffff;
+	animation-delay: -0s;
+}
+.box2{
+	animation-delay: -0.5s;
+}
+.box3{
+	animation-delay: -1s;
+}
+.box4{
+	animation-delay: -1.5s;
+}
+@keyframes move{
+	0%{
+		left: 0;
+		top: 0;
+	}
+	25%{
+		left: 200px;
+		top: 0;
+	}
+	50%{
+		left: 200px;
+		top: 200px;
+	}
+	75%{
+		left: 0;
+		top: 200px;
+	}
+	100%{
+		left: 0;
+		top: 0;
+	}
+}
+
+```
+animation-delay 可以是负值，负值可以结合延迟
