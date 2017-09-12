@@ -1,0 +1,44 @@
+.container{
+	width: 200px;
+	height: 300px;
+	position: relative;
+	perspective: 1000px;
+	margin: 45px auto 0;
+	/* 透视距离 */
+}
+.container > *{
+	position: absolute;
+}
+.container .backImg{
+	width: 200px;
+	height: 300px;
+	background: url("./images/back_1.jpg") no-repeat;
+	background-size: cover;
+	left: 0;
+	top: 0;
+}
+
+.container .borderLine{
+	width: 160px;
+	height: 260px;
+	border: 5px solid #ffffff;
+	left: 15px;
+	top: 15px;
+	transition: opacity 0.5s;
+	opacity: 0;
+}
+.container .box{
+	left: 23px;
+	transition: bottom 0.4s 0.1s, opacity 0.4s ;
+	bottom: -10px;
+	opacity: 0;
+}
+.container:hover .box{
+	transition: bottom 0.4s, opacity 0.4s 0.1s;
+}
+.container .words{
+	font: 13px/21px simsun,arial;
+	color: #ffffff;
+	position: relative;
+	text-shadow: 1px 1px 0 #000000;
+}
